@@ -1,8 +1,8 @@
-package com.anitrack.crud.controller;
+package Modul7.controller;
 
-import com.anitrack.crud.dao.AnimeDAO;
-import com.anitrack.crud.dao.AnimeListDAO;
-import com.anitrack.crud.model.Anime;
+import Modul7.dao.AnimeDAO;
+import Modul7.dao.AnimeListDAO;
+import Modul7.model.Anime;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;

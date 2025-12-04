@@ -5,7 +5,7 @@
 <?import javafx.geometry.Insets?>
 
 <HBox spacing="20" alignment="CENTER" xmlns:fx="http://javafx.com/fxml"
-        fx:controller="com.anitrack.crud.controller.AnimeController">
+        fx:controller="Modul7.controller.AnimeController">
 
     <padding><Insets top="20" right="20" bottom="20" left="20"/></padding>
 

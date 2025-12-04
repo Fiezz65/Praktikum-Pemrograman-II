@@ -1,4 +1,4 @@
-package com.praktikum.modul7;
+package Modul7;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;

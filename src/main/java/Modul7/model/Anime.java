@@ -1,4 +1,4 @@
-package com.anitrack.crud.model;
+package Modul7.model;
 
 public class Anime {
     private String id;

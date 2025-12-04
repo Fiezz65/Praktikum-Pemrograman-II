@@ -1,6 +1,6 @@
-package com.anitrack.crud.dao;
+package Modul7.dao;
 
-import com.anitrack.crud.model.Anime;
+import Modul7.model.Anime;
 import java.util.List;
 
 public interface AnimeDAO {
