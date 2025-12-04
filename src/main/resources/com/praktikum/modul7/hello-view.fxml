@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<HBox spacing="20" alignment="CENTER" xmlns:fx="http://javafx.com/fxml"
+        fx:controller="com.anitrack.crud.controller.AnimeController">
+
+    <padding><Insets top="20" right="20" bottom="20" left="20"/></padding>
+
+    <VBox spacing="10" prefWidth="250">
+        <Label text="ID Anime" style="-fx-font-weight: bold"/>
+        <TextField fx:id="inputId" promptText="ID"/>
+
+        <Label text="Judul"/>
+        <TextField fx:id="inputTitle" promptText="Judul Anime"/>
+
+        <Label text="Genre"/>
+        <TextField fx:id="inputGenre" promptText="Genre (Action, Drama..)"/>
+
+        <Label text="Status"/>
+        <ComboBox fx:id="comboStatus" prefWidth="250" promptText="Pilih Status"/>
+
+        <HBox spacing="10" style="-fx-padding: 10 0 0 0;">
+            <Button text="Simpan" onAction="#onAdd" style="-fx-background-color: lightgreen;"/>
+            <Button text="Update" onAction="#onUpdate" style="-fx-background-color: lightblue;"/>
+            <Button text="Hapus" onAction="#onDelete" style="-fx-background-color: salmon;"/>
+        </HBox>
+    </VBox>
+
+    <TableView fx:id="tableAnime" HBox.hgrow="ALWAYS" onMouseClicked="#onTableClick">
+        <columns>
+            <TableColumn fx:id="colId" text="ID" prefWidth="50"/>
+            <TableColumn fx:id="colTitle" text="Judul" prefWidth="150"/>
+            <TableColumn fx:id="colGenre" text="Genre" prefWidth="100"/>
+            <TableColumn fx:id="colStatus" text="Status" prefWidth="100"/>
+        </columns>
+    </TableView>
+</HBox>

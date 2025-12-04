@@ -1,0 +1,19 @@
+# --- Gradle ---
+.gradle/
+build/
+# Pastikan wrapper jar tetap terupload (penting agar orang lain bisa run project)
+!gradle/wrapper/gradle-wrapper.jar
+
+# --- IntelliJ IDEA ---
+# Abaikan seluruh folder setting IntelliJ agar tidak konflik antar laptop
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+# --- System & Lainnya ---
+.DS_Store
+Thumbs.db
+.vscode/
+bin/
